@@ -1,0 +1,158 @@
+:root {
+  --primary-color-branding: #5928ed;
+  --secondary-color-branding: #8c15e9;
+  --terniary-color-branding: #f8f3ff;
+  --quaternary-color-branding: #00d0b7;
+  --main-font:'Inter', sans-serif;
+
+}
+
+body{
+  background-color: var(--terniary-color-branding);
+  font-family: var(--main-font);
+}
+/*home page desktop */
+
+.grid-container{
+  display: grid;
+  grid-template-rows: 7.5% 15% 7.5% 60% 10%;  /*I need 5 */  
+  grid-template-columns:40% 40% 20%;/* I need 2 */
+  grid-gap: 1px;
+}
+
+header{
+grid-column: 1 / span 3;
+}
+
+.upperLogo{
+  width: 80px;
+  margin: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+nav{
+grid-column: 1 / span 3;
+display: flex;
+gap: 20px;
+background-color: var(--secondary-color-branding);
+}
+.globalLinksMenu{
+  display: flex;
+  gap: 30px;
+}
+.linksMenu{
+  color: var(--terniary-color-branding);
+  text-decoration: none;
+  font-weight: 600;
+}
+.mainContainerHome{
+  grid-column:1 /span 2;
+
+}
+
+
+ul.globalLinksMenu{
+  list-style: none;
+}
+
+.searchBar{
+  align-self: center;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+input[type=search]{
+width: 200px;
+border-radius: 5px;
+border: none;
+padding: 5px;
+}
+
+
+.searchBar:focus{
+outline: none;
+}
+
+
+input[type=submit]{
+background-color: var(--quaternary-color-branding);
+border: none;
+padding: 5px 10px;
+color: var(--terniary-color-branding);
+font-weight: 600;
+cursor: pointer;
+border-radius: 5px;
+}
+
+
+.headerTitle{
+text-align: center;
+font-size: 2.7em;
+color: var(--primary-color-branding);
+margin-bottom: auto;
+}
+
+.introductionParagraph{
+  color: var(--primary-color-branding);
+}
+
+.welcome{
+grid-column: 1 / span 3;
+justify-self: center;
+}
+
+.homeProducts{
+  width: 379px;
+}
+
+aside{
+  display: grid;
+  grid-template-rows: 33.3% 33.3% 33.3%;  /*I need 3 */  
+  grid-template-columns:50% 50%;/* I need 2 */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  grid-gap: 3px;
+  height: 300px;
+}
+.asideHeader{
+  grid-column: 1 / span 2;
+  text-align: center;
+  font-size: 1.7rem;
+  margin-top: 40px;
+  color: var(--primary-color-branding);
+}
+.asideText{
+  color: var(--secondary-color-branding);
+  font-size: 0.8rem;
+   margin-left: 20px;
+   align-self: center;
+}
+.asideTextTwo{
+  color: var(--secondary-color-branding);
+  font-size: 0.8rem;
+  align-self: center;
+}
+.checkout{
+  grid-column: 1 / span 2;
+  border: none;
+  color: var(--terniary-color-branding);
+  font-weight: 800;
+  align-self:first baseline;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  background-color: var(--quaternary-color-branding);
+}
+
+
+footer{
+ background-color: var(--secondary-color-branding);
+ grid-column: 1 / span 3;
+
+}
+
+.textFooter{
+color: var(--terniary-color-branding);
+text-align: center;
+}
