@@ -174,7 +174,10 @@ footer{
 color: var(--terniary-color-branding);
 text-align: center;
 }
-
+.imageProductPageContainer{
+  flex: 0 0 calc(20% - 10px); /* Two items per row with 10px gap */
+  text-decoration: none;
+}
 /*products*/
 .imageProducts{
   height: 250px;
