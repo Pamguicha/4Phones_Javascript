@@ -34,6 +34,7 @@ grid-column: 1 / span 3;
 nav{
 grid-column: 1 / span 3;
 display: flex;
+flex-wrap: wrap;
 gap: 20px;
 background-color: var(--secondary-color-branding);
 }
@@ -45,10 +46,6 @@ background-color: var(--secondary-color-branding);
   color: var(--terniary-color-branding);
   text-decoration: none;
   font-weight: 600;
-}
-.mainContainerHome{
-  grid-column:1 /span 2;
-
 }
 
 
@@ -102,9 +99,30 @@ grid-column: 1 / span 3;
 justify-self: center;
 }
 
-.homeProducts{
-  width: 379px;
+.mainContainerHome{
+grid-column: 1 / span 2;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
 }
+
+.homeProducts{
+  width: 350px;
+  width: 100%; 
+  height: auto;
+}
+
+.item1{
+  flex: 0 0 calc(50% - 10px); /* Two items per row with 10px gap */
+  text-decoration: none;
+}
+
+.titleHomeProduct{
+  text-align: center;
+  margin-top: 10px;
+  color: var(--secondary-color-branding);
+}
+
 
 aside{
   display: grid;
@@ -155,4 +173,9 @@ footer{
 .textFooter{
 color: var(--terniary-color-branding);
 text-align: center;
+}
+
+/*products*/
+.imageProducts{
+  height: 250px;
 }
