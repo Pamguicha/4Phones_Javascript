@@ -45,7 +45,7 @@ background-color: var(--secondary-color-branding);
 .linksMenu{
   color: var(--terniary-color-branding);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 
@@ -72,7 +72,7 @@ outline: none;
 }
 
 
-input[type=submit]{
+.btnSearchBar{
 background-color: var(--quaternary-color-branding);
 border: none;
 padding: 5px 10px;
@@ -190,4 +190,42 @@ text-align: center;
   background-color: var(--primary-color-branding);
   color:var(--terniary-color-branding);
   border: none;
+  width: 600px;
+  margin-bottom: 40px;
+  
+}
+
+
+.registerFormInput{
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+  padding: 6px;
+  margin: 6px auto;
+}
+
+.registerFormInput:focus{
+  outline: 2px solid var(--secondary-color-branding);
+}
+
+.labelRegisterForm{
+  font-weight: 600;
+}
+.resetBtnRegisterForm{
+  background-color: rgb(204, 138, 248);
+  margin-top: 10px;
+  border: none;
+  padding: 12px 30px;
+  cursor: pointer;
+  color: var(--terniary-color-branding);
+  font-weight: 800;
+}
+.submitRegisterBtn{
+   margin-top: 10px;
+  border: none;
+  padding: 12px 60px;
+  cursor: pointer;
+  background-color: var(--quaternary-color-branding);
+  font-weight: 800;
+  color: var(--terniary-color-branding);
 }
