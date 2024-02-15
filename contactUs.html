@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
   <script src="script.js" defer></script>
   <title>Welcome to our products page</title>
 </head>
+
 <body>
   <div class="grid-container" role="container">
     <header>
@@ -30,45 +32,34 @@
         <input class="btnSearchBar" type="submit" role="button" aria-label="submision button" value="Search">
       </form>
     </nav>
-  
+
     <div class="welcome">
-      <h1 class="headerTitle">Products we sell</h1>
-      <p class="introductionParagraph">4Phones sells products in the following categories</p>
+      <h1 class="headerTitle">Contact Us Form</h1>
+      <p class="introductionParagraph">Please complete the following form to send your questions/inquiry to us:</p>
     </div>
     <main class="mainContainerHome">
-      <a class="imageProductPageContainer">
-        <img class="imageProducts" id="iphoneImageLinked"src="images/refurnish.png" alt="Iphone">
-        <h2 class="titleHomeProduct">Iphone</h2>
-      </a>
-      <a class="imageProductPageContainer" href="#">
-        <img class="imageProducts" id="samsungLink" src="images/samsung.jpg" alt="Samsung">
-        <h2 class="titleHomeProduct">Samsung</h2>
-      </a>
-      <a class="imageProductPageContainer" href="#">
-        <img class="imageProducts" id="oppoImageLinked" src="images/oppo.jpg" alt="Oppo">
-        <h2 class="titleHomeProduct">Oppo</h2>
-      </a>
-      <a class="imageProductPageContainer" href="#">
-        <img class="imageProducts" id="lgImageLinked" src="images/lg.jpg" alt="LG">
-        <h2 class="titleHomeProduct">LG</h2>
-      </a>
-      <a class="imageProductPageContainer" href="#">
-        <img class="imageProducts" id="huaweiImageLinked" src="images/latestMobilePhones.jpg" alt="Huawei">
-        <h2 class="titleHomeProduct">Huawei</h2>
-      </a>
-      <a class="imageProductPageContainer" href="#">
-        <img class="imageProducts" id="googleImageLinked" src="images/google.jpg" alt="Google">
-        <h2 class="titleHomeProduct">Google</h2>
-      </a>
-      <a class="imageProductPageContainer" href="#">
-        <img class="imageProducts" id="storageImageLinked"src="images/storage.png" alt="Storage">
-        <h2 class="titleHomeProduct">Storage</h2>
-      </a>
-      <a class="imageProductPageContainer" href="#">
-        <img class="imageProducts" id="tabletsImageLinked" src="images/tablet.png" alt="Tablets">
-        <h2 class="titleHomeProduct">Tablets</h2>
-      </a>
-  
+     <fieldset class="fieldsetContactUs" role=“group” aria-labelledby=“contactUsLegend”>
+      <form class="contactForm" id="contact-form">
+      <label for="firstNameContactForm" class="labelContactForm" id="contactName-label"> First Name:
+  </label> <br>
+  <input class="registerFormInput" id="firstNameContactForm" type="text" placeholder="Enter your name"><label
+    id="firstNameErrorCf" class="required"> * </label> <br>
+    <label for="emailContactForm" class="labelRegisterForm">Email address:</label><br>
+    <input class="registerFormInput" id="emailContactForm" type="email" placeholder="Enter your Email">
+    <label id="emailErrorCf" class="required"> * </label> <br> 
+<label for="telephoneContact" class="labelRegisterForm" id="telephone-labelCf"> Mobile number:</label> <br>
+<input class="registerFormInput" id="telephoneContact" type="tel" name="telephone"
+  pattern="[0-4]{2}[0-9]{3} [0-9]{3} [0-9]{2}" placeholder="Enter your mobile number"><label id="telephoneErrorCf"
+  class="required"> * </label>
+<br>
+
+
+
+        </form>
+
+     </fieldset>
+
+
     </main>
     <aside>
       <h2 class="asideHeader">Purchases</h2>
@@ -80,8 +71,9 @@
       <p class="textFooter"> &copy; 2024 Pamela Mardones </p>
     </footer>
   </div>
-  </body>
-  
-  </html>
 </body>
+
+</html>
+</body>
+
 </html>

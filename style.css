@@ -10,6 +10,8 @@
 body{
   background-color: var(--terniary-color-branding);
   font-family: var(--main-font);
+    letter-spacing: 0.5px;
+line-height: 1.4;
 }
 /*home page desktop */
 
@@ -128,7 +130,7 @@ aside{
   display: grid;
   grid-template-rows: 33.3% 33.3% 33.3%;  /*I need 3 */  
   grid-template-columns:50% 50%;/* I need 2 */
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ box-shadow: rgba(86, 85, 85, 0.24) 0px 3px 8px;
   grid-gap: 3px;
   height: 300px;
 }
@@ -184,11 +186,13 @@ text-align: center;
 }
 /*register*/
 .required{
-  color: var(--terniary-color-branding);
+  color: red;
+  font-size: 0.7rem;
+  font-weight: 600;
 }
 .fieldsetRegister{
-  background-color: var(--primary-color-branding);
-  color:var(--terniary-color-branding);
+  background-color: rgb(193, 154, 247);
+  color:white;
   border: none;
   width: 600px;
   margin-bottom: 40px;
@@ -228,4 +232,41 @@ text-align: center;
   background-color: var(--quaternary-color-branding);
   font-weight: 800;
   color: var(--terniary-color-branding);
+}
+
+/*about us desktop*/
+.introContactParagraph{
+letter-spacing: 0.5px;
+line-height: 1.8;
+margin: 30px;
+
+}
+.goalsTitle{
+  color: var(--secondary-color-branding);
+  font-size: 30px;
+ 
+}
+.listAboutUs{
+color: var(--primary-color-branding);
+list-style-type: square;
+
+}
+.listGoals{
+  margin-bottom: 35px;
+}
+
+.listContactMain{
+ box-shadow: rgba(196, 124, 124, 0.24) 0px 3px 8px;
+}
+
+.contactUsAbout{
+  color: var(--secondary-color-branding);
+  font-size: 1.8rem;
+  
+}
+
+address{
+  color:var(--primary-color-branding);
+  margin-bottom: 30px;
+
 }
