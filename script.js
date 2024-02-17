@@ -1,5 +1,3 @@
-console.log("hello world");
-//todo 12 functions
 // selectors for RegisterForm 
 const submitBtnRegisterForm = document.querySelector("#submitBtnRform");
 const errorUserNameRf = document.querySelector("#usernameError");
@@ -15,6 +13,8 @@ const errorPostcode = document.querySelector("#postcodeError");
 const errorState = document.querySelector("#stateError");
 const errorMobileNumberRf = document.querySelector("#telephoneErrorRf");
 
+
+//event listener register form
 submitBtnRegisterForm.addEventListener("click", function(ev){
   ev.preventDefault();
   return validateUserData();
@@ -169,7 +169,7 @@ function validateAddress(errorFound) {
     errorAddress.innerHTML = "Your address must be between 3 and 50 characters";
       return ++errorFound;
   }
-  let illegalChars = /\W/;
+  let illegalChars = /[^\w\s]/;
      if (illegalChars.test(userdata)) {
       errorAddress.innerHTML = "Your address cannot contain illegal characters such as symbols";
       return ++errorFound;
@@ -195,7 +195,6 @@ let userdata = document.getElementById("suburb").value;
   }
   else {
     errorSuburb.innerHTML = "*";
-    return errorFound;
  }
 }
 //Required. Must be 4 characters exactly.
@@ -232,8 +231,3 @@ function validateMobileRf(errorFound){
       return ++errorFound;
     }
  };
-
-
-
-
-//todo careful to select same name with name, email, phone number, message.

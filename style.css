@@ -192,7 +192,7 @@ text-align: center;
 }
 .fieldsetRegister{
   background-color: rgb(193, 154, 247);
-  color:white;
+ 
   border: none;
   width: 600px;
   margin-bottom: 40px;
@@ -216,7 +216,7 @@ text-align: center;
   font-weight: 600;
 }
 .resetBtnRegisterForm{
-  background-color: rgb(204, 138, 248);
+  background-color: var(--quaternary-color-branding);
   margin-top: 10px;
   border: none;
   padding: 12px 30px;
@@ -229,7 +229,7 @@ text-align: center;
   border: none;
   padding: 12px 60px;
   cursor: pointer;
-  background-color: var(--quaternary-color-branding);
+  background-color: var(--secondary-color-branding);
   font-weight: 800;
   color: var(--terniary-color-branding);
 }
@@ -270,3 +270,36 @@ address{
   margin-bottom: 30px;
 
 }
+/*contact us*/
+.textarea{
+width: 306px; height: 171px;
+border:none;
+  border-radius: 5px;
+}
+
+ .fieldsetContactUs{
+  background-color: rgb(193, 154, 247);
+  border: none;
+  width: 650px;
+  margin-bottom: 50px;
+ }
+.clearForm{
+  background-color: var(--quaternary-color-branding);
+  margin-top: 10px;
+  border: none;
+  padding: 12px 30px;
+  cursor: pointer;
+  color: var(--terniary-color-branding);
+  font-weight: 800;
+}
+
+.submitContactForm{
+  margin-top: 10px;
+  border: none;
+  padding: 12px 60px;
+  cursor: pointer;
+  background-color: var(--secondary-color-branding);
+  font-weight: 800;
+  color: var(--terniary-color-branding);
+}
+
