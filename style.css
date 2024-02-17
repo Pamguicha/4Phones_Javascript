@@ -50,6 +50,11 @@ background-color: var(--secondary-color-branding);
   font-weight: 800;
 }
 
+/*this is what I need to select .linksMenu:hover{
+  background-color: pink;
+  padding: 18px;
+}
+*/
 
 ul.globalLinksMenu{
   list-style: none;
@@ -93,7 +98,8 @@ margin-bottom: auto;
 }
 
 .introductionParagraph{
-  color: var(--primary-color-branding);
+  color: black;
+  margin-top: 2px;
 }
 
 .welcome{
@@ -247,12 +253,14 @@ margin: 30px;
  
 }
 .listAboutUs{
-color: var(--primary-color-branding);
+color: black;
 list-style-type: square;
+font-size: 1.2rem;
 
 }
 .listGoals{
   margin-bottom: 35px;
+
 }
 
 .listContactMain{
@@ -266,14 +274,15 @@ list-style-type: square;
 }
 
 address{
-  color:var(--primary-color-branding);
   margin-bottom: 30px;
-
+}
+.purple{
+  color:var(--secondary-color-branding);
 }
 /*contact us*/
 .textarea{
-width: 306px; height: 171px;
-border:none;
+ width: 306px; height: 171px;
+ border:none;
   border-radius: 5px;
 }
 

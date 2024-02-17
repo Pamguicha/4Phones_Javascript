@@ -231,3 +231,7 @@ function validateMobileRf(errorFound){
       return ++errorFound;
     }
  };
+
+
+
+
