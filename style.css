@@ -50,11 +50,6 @@ background-color: var(--secondary-color-branding);
   font-weight: 800;
 }
 
-/*this is what I need to select .linksMenu:hover{
-  background-color: pink;
-  padding: 18px;
-}
-*/
 
 ul.globalLinksMenu{
   list-style: none;
@@ -312,3 +307,46 @@ address{
   color: var(--terniary-color-branding);
 }
 
+/*mobile phone responsive */
+ @media only screen and (max-width: 768px) {
+
+.navigationBar{
+  padding: 10px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+}
+
+.globalLinksMenu{
+    list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+}
+
+.linksMenuList{
+   margin-bottom: 10px;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+form.searchBar{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+.searchBarInput{
+   padding: 8px;
+   margin-right: 10px;
+}
+
+ }
