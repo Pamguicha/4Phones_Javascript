@@ -17,7 +17,7 @@ line-height: 1.4;
 
 .grid-container{
   display: grid;
-  grid-template-rows: 7.5% 5% 12.5% 78%;  /*I need 5 */  
+  grid-template-rows: 3.5% 5% 16% 78% 5.5%;  /*I need 5 */  
   grid-template-columns:40% 40% 20%;/* I need 2 */
   grid-gap: 1px;
 }
